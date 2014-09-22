@@ -24,11 +24,7 @@ CFLAGS			= -DLINUX -DUSE_SOC_MX6 -Wall -O2 -fsigned-char -march=armv7-a -mfpu=ne
                           -I$(TARGET_PATH_INCLUDE)/libxml2 \
 
 LFLAGS			= -Wl,--library-path=$(TARGET_PATH_LIB),-rpath-link=$(TARGET_PATH_LIB) -lm \
-			  -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml \
-			  -L/usr/lib \
-			  -lusb-1.0 -lfreenect \
-		          -lEGL -lGLESv2 -lpthread 
-
+			   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml
  
 
 # fb flags
@@ -40,11 +36,7 @@ CFLAGS			= -DLINUX -DUSE_SOC_MX6 -Wall -O2 -fsigned-char -march=armv7-a -mfpu=ne
                           -I$(TARGET_PATH_INCLUDE)/libxml2 \
 
 LFLAGS			= -Wl,--library-path=$(TARGET_PATH_LIB),-rpath-link=$(TARGET_PATH_LIB) -lm \
-			  -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml \
-			  -L/usr/lib \
-			  -lusb-1.0 -lfreenect \
-		          -lEGL -lGLESv2 -lpthread 
-
+			   -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml
 
 endif
 
